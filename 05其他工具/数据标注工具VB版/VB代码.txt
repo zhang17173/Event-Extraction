@@ -1,0 +1,27 @@
+    Dim start_row As Integer
+    Dim n As Integer, i As Integer
+    Dim ss As String
+    Let start_row = Selection.row
+    Let n = Selection.Rows.Count
+    If n = 1 Then
+        Range("D" + CStr(start_row)).Value = "S-K"	' 这里将“S-K”按照需要修改即可，下同
+        Range("D" + CStr(start_row)).EntireRow.Interior.ColorIndex = 8
+        
+    Else
+        If n = 2 Then
+            Range("D" + CStr(start_row)).Value = "B-K"
+            Range("D" + CStr(start_row)).EntireRow.Interior.ColorIndex = 8
+            Range("D" + CStr(start_row + 1)).Value = "E-K"
+            Range("D" + CStr(start_row + 1)).EntireRow.Interior.ColorIndex = 8
+        Else
+            Range("D" + CStr(start_row)).Value = "B-K"
+            Range("D" + CStr(start_row)).EntireRow.Interior.ColorIndex = 8
+            Range("D" + CStr(start_row + n - 1)).Value = "E-K"
+            Range("D" + CStr(start_row + n - 1)).EntireRow.Interior.ColorIndex = 8
+            For i = start_row + 1 To start_row + n - 2 Step 1
+                Let ss = "D" + CStr(i)
+                Range(ss).Value = "I-K"
+                Range(ss).EntireRow.Interior.ColorIndex = 8
+                Next i
+        End If
+    End If
