@@ -1,8 +1,8 @@
 # coding=utf-8
-from 数字特征提取 import extract_seg
-from 数字特征提取 import sentence_result
+
 import csv
-import re
+from utils import extract_seg
+from utils import sentence_result
 
 
 def remove_duplicate_elements(l):
@@ -193,10 +193,10 @@ headers = ['01死亡人数', "02重伤人数", "04责任认定", "05是否酒后
            "11是否逃逸", "12是否抢救伤者", "13是否报警", "14是否现场等待", "15是否赔偿", "16是否认罪", "18是否初犯偶犯", "判决结果"]
 rows = []
 # 提取标签
-labels = label_case("data/preprocessed_data.txt", is_label=True)
-num_cases = 21086
+labels = label_case("/home/zhangshiwei/Event-Extraction/01数据预处理/preprocessed_data.txt", is_label=True)
+num_cases = 13138
 
-f1 = open("data/preprocessed_data.txt", "r", encoding="utf-8")
+f1 = open("/home/zhangshiwei/Event-Extraction/01数据预处理/preprocessed_data.txt", "r", encoding="utf-8")
 contents = f1.readlines()
 for i in range(1, num_cases + 1):
     file_name = "data/单个案件/" + str(i) + ".txt"
