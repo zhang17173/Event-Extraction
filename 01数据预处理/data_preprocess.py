@@ -11,6 +11,8 @@ f1 = open("original_data.txt", "r", encoding='utf-8')
 f2 = open("preprocessed_data.txt", "w", encoding='utf-8')
 num = 1
 for line in f1.readlines():
+    location = line.split("\t")[0]
+    line = line.split("\t")[-1]
     line1 = re.sub(u"（.*?）", "", line)  # 去除括号内注释
     line2 = re.sub("[%s]+" % punctuation, "", line1)  # 去除标点
     # 去除冗余词
@@ -20,7 +22,7 @@ for line in f1.readlines():
         line2)
     # 删除内容过少或过长的文书，删除包含’保险‘的文书，只保留以’被告人‘开头的文书
     if 100 < len(line3) < 400 and line3.startswith("被告人") and "保险" not in line3:
-        f2.write(str(num) + '\t' + line3)
+        f2.write(str(num) + "\t" + location + '\t' + line3)
         num += 1
 
 f1.close()
