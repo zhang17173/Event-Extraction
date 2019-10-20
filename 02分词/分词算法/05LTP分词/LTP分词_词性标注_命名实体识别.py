@@ -14,7 +14,7 @@ pos_model_path = os.path.join(LTP_DATA_DIR,
 ner_model_path = os.path.join(LTP_DATA_DIR,
                               'ner.model')  # 命名实体识别模型路径，模型名称为`ner.model`
 
-with open("/home/zhangshiwei/基于法律裁判文书的事件抽取和应用/01数据预处理/preprocessed_data.txt", "r", encoding='utf-8') as f1:
+with open("/home/zhangshiwei/Event-Extraction/01数据预处理/preprocessed_data.txt", "r", encoding='utf-8') as f1:
     words = f1.read()
 
     segmentor = Segmentor()  # 初始化实例
