@@ -1,20 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7145f87-6b1d-47a0-9a36-2f4efbaa4a1d" name="Default Changelist" comment="" />
+    <list default="true" id="d7145f87-6b1d-47a0-9a36-2f4efbaa4a1d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01数据预处理/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/01数据预处理/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01数据预处理/data_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/01数据预处理/data_preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01数据预处理/preprocessed_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/01数据预处理/preprocessed_data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02分词/分词算法/05LTP分词/分词_词性标注_命名实体识别_结果.txt" beforeDir="false" afterPath="$PROJECT_DIR$/02分词/分词算法/05LTP分词/分词_词性标注_命名实体识别_结果.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/crf_result.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/切割完整数据.py" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/切割完整数据.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/特征提取.py" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/特征提取.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SVA2pyB8IJG0wpdC96CyykhE0j" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CRF++-0.58" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -31,7 +50,51 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.LTP分词_词性标注_命名实体识别">
+    <configuration name="批处理" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/06判决结果预测/pytorch多分类" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06判决结果预测/pytorch多分类/批处理.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LTP分词_词性标注_命名实体识别" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/02分词/分词算法/05LTP分词" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02分词/分词算法/05LTP分词/LTP分词_词性标注_命名实体识别.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="data_preprocess" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -56,7 +119,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.LTP分词_词性标注_命名实体识别" />
         <item itemvalue="Python.data_preprocess" />
+        <item itemvalue="Python.批处理" />
       </list>
     </recent_temporary>
   </component>
@@ -73,6 +138,7 @@
       <workItem from="1571638190199" duration="80000" />
       <workItem from="1571638309024" duration="309000" />
       <workItem from="1571638833176" duration="2691000" />
+      <workItem from="1571664177933" duration="1781000" />
     </task>
     <servers />
   </component>
@@ -93,6 +159,9 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Event_Extraction$data_preprocess.coverage" NAME="data_preprocess Coverage Results" MODIFIED="1571665861029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01数据预处理" />
     <SUITE FILE_PATH="coverage/git$data_preprocess.coverage" NAME="data_preprocess Coverage Results" MODIFIED="1571640878867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01数据预处理" />
+    <SUITE FILE_PATH="coverage/Event_Extraction$LTP__.coverage" NAME="LTP分词_词性标注_命名实体识别 Coverage Results" MODIFIED="1571665896213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/02分词/分词算法/05LTP分词" />
+    <SUITE FILE_PATH="coverage/Event_Extraction$.coverage" NAME="批处理 Coverage Results" MODIFIED="1571665619714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/06判决结果预测/pytorch多分类" />
   </component>
 </project>

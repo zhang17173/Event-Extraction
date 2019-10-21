@@ -1,6 +1,7 @@
 # coding=utf-8
 
 import csv
+import glob
 from utils import extract_seg
 from utils import sentence_result
 
@@ -213,7 +214,7 @@ rows = []
 labels = label_case(
     "/home/zhangshiwei/Event-Extraction/01数据预处理/preprocessed_data.txt",
     is_label=True)
-num_cases = 13138
+num_cases = len(glob.glob("/home/zhangshiwei/Event-Extraction/06判决结果预测/特征提取/data/单个案件/*.txt"))
 
 f1 = open(
     "/home/zhangshiwei/Event-Extraction/01数据预处理/preprocessed_data.txt",

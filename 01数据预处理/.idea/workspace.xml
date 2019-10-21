@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96532a3c-10c1-47a6-bad9-49273d7f3824" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/original_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/original_data.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preprocessed_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessed_data.txt" afterDir="false" />
-    </list>
+    <list default="true" id="96532a3c-10c1-47a6-bad9-49273d7f3824" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +56,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -414,7 +410,7 @@
       <workItem from="1571574989845" duration="401000" />
       <workItem from="1571576170894" duration="9000" />
       <workItem from="1571576732545" duration="7000" />
-      <workItem from="1571664003663" duration="37000" />
+      <workItem from="1571664003663" duration="174000" />
     </task>
     <servers />
   </component>

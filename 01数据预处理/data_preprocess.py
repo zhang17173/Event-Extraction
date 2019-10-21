@@ -9,7 +9,7 @@ from random import shuffle
 punctuation = '''，。、:；（）ＸX×xa"“”,<《》'''
 
 # 对原始数据进行处理
-f1 = open("original_data.txt", "r", encoding='utf-8')
+f1 = open("/home/zhangshiwei/Event-Extraction/01数据预处理/original_data.txt", "r", encoding='utf-8')
 preprocessed_cases = []  # 存储处理过后的案件
 for line in f1.readlines():
     line = line.strip()

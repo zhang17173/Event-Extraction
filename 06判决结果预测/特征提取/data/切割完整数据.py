@@ -3,8 +3,14 @@
 # @Author:Zhang Shiwei
 # @Date  :2019-07-21
 
+import shutil
+import os
+
+shutil.rmtree("单个案件")
+os.mkdir("单个案件")
+
 # 将整个文本切割成单个的案件
-with open("crf_result.txt", "r", encoding="utf-8") as f1:
+with open("/home/zhangshiwei/CRF++-0.58/data/result.txt", "r", encoding="utf-8") as f1:
     data = f1.readlines()
     num = 1
     file_name = '单个案件/' + str(num) + '.txt'
