@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96532a3c-10c1-47a6-bad9-49273d7f3824" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../06判决结果预测/pytorch多分类/.idea/dictionaries/zhangshiwei.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06判决结果预测/pytorch多分类/data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06判决结果预测/pytorch多分类/preprocessed_data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06判决结果预测/pytorch多分类/result.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06判决结果预测/pytorch多分类/test16.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06判决结果预测/pytorch多分类/test16_without_error.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06判决结果预测/pytorch多分类/test5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06判决结果预测/pytorch多分类/test5_without_error.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06判决结果预测/pytorch多分类/train16.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06判决结果预测/pytorch多分类/train16_without_error.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06判决结果预测/pytorch多分类/train5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06判决结果预测/pytorch多分类/train5_without_error.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06判决结果预测/pytorch多分类/数据预处理.py" beforeDir="false" afterPath="$PROJECT_DIR$/../06判决结果预测/pytorch多分类/数据预处理.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../06判决结果预测/pytorch多分类/结果分析.py" beforeDir="false" afterPath="$PROJECT_DIR$/../06判决结果预测/pytorch多分类/结果分析.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/original_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/original_data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocessed_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/preprocessed_data.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,6 +122,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LTP分词.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="分词" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="数据预处理" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/分词.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -318,28 +328,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="分词" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="数据预处理" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/分词.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="预处理_去除注释及标点" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="数据预处理" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -426,6 +414,7 @@
       <workItem from="1571574989845" duration="401000" />
       <workItem from="1571576170894" duration="9000" />
       <workItem from="1571576732545" duration="7000" />
+      <workItem from="1571664003663" duration="37000" />
     </task>
     <servers />
   </component>
@@ -447,7 +436,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/$1.coverage" NAME="1 Coverage Results" MODIFIED="1557233693755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/01$data_preprocess.coverage" NAME="data_preprocess Coverage Results" MODIFIED="1571571377775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/01$data_preprocess.coverage" NAME="data_preprocess Coverage Results" MODIFIED="1571664011493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$LTP.coverage" NAME="LTP分词 Coverage Results" MODIFIED="1557641617562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$_.coverage" NAME="预处理_去除注释及标点 Coverage Results" MODIFIED="1557570773747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$.coverage" NAME="预处理 Coverage Results" MODIFIED="1564750229581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
