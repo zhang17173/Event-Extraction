@@ -36,7 +36,7 @@ def get_event_elements(case_file):
     """
     将案件中属于同一事件要素的词语合并，最终返回完整的事件要素
     :param case_file: 记录单个案件的文本文件
-    :return result: 返回一个字典，键为事件要素类型，值为对应的单词组成的list
+    :return result: 返回一个字典，键为事件要素类型，值为对应的事件要素组成的list
     """
     words = []  # 保存所有属于事件要素的单词
     element_types = []  # 保存上述单词对应的事件要素类型
@@ -98,7 +98,8 @@ def get_event_elements(case_file):
             N.append("超载")
         if "逃逸" in case or "逃离" in case:
             N.append("逃逸")
-        if ("有前科" in case or "有犯罪前科" in case) and ("无前科" not in case and "无犯罪前科" not in case):
+        if ("有前科" in case or "有犯罪前科" in case) and (
+                "无前科" not in case and "无犯罪前科" not in case):
             N.append("有犯罪前科")
 
         # 整理抽取结果
@@ -189,14 +190,35 @@ def label_case(file, is_label=False):
     return labels
 
 
-headers = ['01死亡人数', "02重伤人数", "04责任认定", "05是否酒后驾驶", "06是否吸毒后驾驶", "07是否无证驾驶", "08是否无牌驾驶", "09是否不安全驾驶", "10是否超载",
-           "11是否逃逸", "12是否抢救伤者", "13是否报警", "14是否现场等待", "15是否赔偿", "16是否认罪", "18是否初犯偶犯", "判决结果"]
+headers = [
+    '01死亡人数',
+    "02重伤人数",
+    "04责任认定",
+    "05是否酒后驾驶",
+    "06是否吸毒后驾驶",
+    "07是否无证驾驶",
+    "08是否无牌驾驶",
+    "09是否不安全驾驶",
+    "10是否超载",
+    "11是否逃逸",
+    "12是否抢救伤者",
+    "13是否报警",
+    "14是否现场等待",
+    "15是否赔偿",
+    "16是否认罪",
+    "18是否初犯偶犯",
+    "判决结果"]
 rows = []
 # 提取标签
-labels = label_case("/home/zhangshiwei/Event-Extraction/01数据预处理/preprocessed_data.txt", is_label=True)
+labels = label_case(
+    "/home/zhangshiwei/Event-Extraction/01数据预处理/preprocessed_data.txt",
+    is_label=True)
 num_cases = 13138
 
-f1 = open("/home/zhangshiwei/Event-Extraction/01数据预处理/preprocessed_data.txt", "r", encoding="utf-8")
+f1 = open(
+    "/home/zhangshiwei/Event-Extraction/01数据预处理/preprocessed_data.txt",
+    "r",
+    encoding="utf-8")
 contents = f1.readlines()
 for i in range(1, num_cases + 1):
     file_name = "data/单个案件/" + str(i) + ".txt"
@@ -204,13 +226,16 @@ for i in range(1, num_cases + 1):
     patterns = get_patterns_from_dict(result)
     # 因为目前CRF提取的效果还不够好，伤亡情况可能没有提取出来
     # 保险起见，对整个案件进行提取死亡人数等3个特征，而非事件抽取的结果
-    patterns['01死亡人数'], patterns['02重伤人数'], patterns['03轻伤人数'] = extract_seg(contents[i - 1])
+    patterns['01死亡人数'], patterns['02重伤人数'], patterns['03轻伤人数'] = extract_seg(
+        contents[i - 1])
     patterns["判决结果"] = labels[i - 1]
     del patterns["是否初犯偶犯"]
     del patterns["03轻伤人数"]
     del patterns["17是否如实供述"]
     rows.append(patterns)
 f1.close()
+
+# 写回数据
 with open("data.csv", "w", newline='') as f:
     f_csv = csv.DictWriter(f, headers)
     f_csv.writeheader()
