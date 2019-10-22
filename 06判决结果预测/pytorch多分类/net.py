@@ -22,9 +22,9 @@ class MyDataset(Dataset):
         return self.x_data[idx], self.y_data[idx]
 
 
-train_set = MyDataset("train5_without_error.csv")
+train_set = MyDataset("train5.csv")
 train_data = DataLoader(dataset=train_set, batch_size=32, shuffle=True)
-test_set = MyDataset("test5_without_error.csv")
+test_set = MyDataset("test5.csv")
 test_data = DataLoader(dataset=test_set, batch_size=32, shuffle=False)
 
 
@@ -92,6 +92,6 @@ def test():
     print(sum(correct) / sum(total))
 
 
-for epoch in range(1, 101):
+for epoch in range(1, 201):
     train(epoch)
 test()

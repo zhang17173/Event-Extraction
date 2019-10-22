@@ -17,8 +17,8 @@ def data_split(data_csv):
         del (rows[0])  # 去除表头
         # 打乱顺序
         # shuffle(rows)
-        rows_train = rows[:12000]
-        rows_test = rows[12000:]
+        rows_train = rows[:13000]
+        rows_test = rows[13000:]
         with open("train16.csv", "w") as f_train:
             f_train_csv = csv.writer(f_train)
             f_train_csv.writerows(rows_train)
@@ -100,10 +100,7 @@ def remove_error(csv_file1, csv_file2):
             f2_csv.writerows(correct)
 
 
+# remove_error("/home/zhangshiwei/Event-Extraction/06判决结果预测/特征提取/data.csv", "data_without_error.csv")
 data_split("/home/zhangshiwei/Event-Extraction/06判决结果预测/特征提取/data.csv")
 patterns_weight("train16.csv", "train5.csv")
 patterns_weight("test16.csv", "test5.csv")
-remove_error("train16.csv", "train16_without_error.csv")
-remove_error("test16.csv", "test16_without_error.csv")
-remove_error("train5.csv", "train5_without_error.csv")
-remove_error("test5.csv", "test5_without_error.csv")

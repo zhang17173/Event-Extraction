@@ -39,7 +39,7 @@ headers = ['01死亡人数', "02重伤人数", "04责任认定", "05是否酒后
 f1 = open("/home/zhangshiwei/Event-Extraction/01数据预处理/preprocessed_data.txt", "r", encoding="utf-8")
 cases = f1.readlines()
 f2 = open("result.csv", "r")
-f3 = open("test16_without_error.csv")
+f3 = open("test16.csv")
 f3_csv = list(csv.reader(f3))
 print(f3_csv)
 f4 = open("analysis.txt", "a", encoding="utf-8")
