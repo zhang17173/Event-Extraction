@@ -9,7 +9,10 @@ from random import shuffle
 punctuation = '''，。、:；（）ＸX×xa"“”,<《》'''
 
 # 对原始数据进行处理
-f1 = open("/home/zhangshiwei/Event-Extraction/01数据预处理/original_data.txt", "r", encoding='utf-8')
+f1 = open(
+    "/home/zhangshiwei/Event-Extraction/01数据预处理/original_data.txt",
+    "r",
+    encoding='utf-8')
 preprocessed_cases = []  # 存储处理过后的案件
 for line in f1.readlines():
     line = line.strip()
@@ -32,6 +35,7 @@ f1.close()
 f2 = open("preprocessed_data.txt", "w", encoding='utf-8')
 # 打乱数据
 shuffle(preprocessed_cases)
+# 写入数据
 for idx, preprocessed_case in enumerate(preprocessed_cases):
     f2.write(str(idx + 1) + "\t" + preprocessed_case + "\n")
 f2.close()

@@ -1,6 +1,33 @@
 import re
 
 
+def remove_duplicate_elements(l):
+    """
+    去除列表中重复元素，同时保持相对顺序不变
+    :param l: 可能包含重复元素的列表
+    :return: 去除重复元素的新列表
+    """
+    new_list = []
+    for elem in l:
+        if elem not in new_list:
+            new_list.append(elem)
+    return new_list
+
+
+def find_element(l, *ss):
+    """
+    查找在l的元素中中是否包含s
+    :param l:列表
+    :param ss:一个或多个字符串
+    :return:
+    """
+    for s in ss:
+        for element in l:
+            if s in element:
+                return "1"
+    return "0"
+
+
 def text2num(text):
     num = 0
     # 将text序列连接成字符串
@@ -48,7 +75,7 @@ def extract_seg(content):
     # 死亡人数、重伤人数、轻伤人数提取
     r1 = re.compile(u'[1234567890一二两三四五六七八九十 ]*人( )*死亡')
     r2 = re.search(r1, content)
-    if r2 == None:
+    if r2 is None:
         num1 = 0
     else:
         text = r2.group()
@@ -56,7 +83,7 @@ def extract_seg(content):
     # 重伤人数
     r3 = re.compile(u'[1234567890一二两三四五六七八九十 ]*人( )*重伤')
     r4 = re.search(r3, content)
-    if r4 == None:
+    if r4 is None:
         num2 = 0
     else:
         text = r4.group()
@@ -64,7 +91,7 @@ def extract_seg(content):
     # 受伤人数
     r5 = re.compile(u'[1234567890一二两三四五六七八九十 ]*人( )*(轻伤|受伤)')
     r6 = re.search(r5, content)
-    if r6 == None:
+    if r6 is None:
         num3 = 0
     else:
         text = r6.group()

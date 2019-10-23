@@ -13,15 +13,17 @@ ner_model_path = os.path.join(LTP_DATA_DIR,
                               'ner.model')  # 命名实体识别模型路径，模型名称为`ner.model`
 
 with open("/home/zhangshiwei/Event-Extraction/01数据预处理/preprocessed_data.txt", "r", encoding='utf-8') as f1:
-    words = f1.read()
+    content = f1.read()
 
+    # 分词
     segmentor = Segmentor()  # 初始化分词实例
     segmentor.load_with_lexicon(cws_model_path, 'dict')  # 加载分词模型，以及自定义词典
-    seg_list = segmentor.segment(words)  # 分词
-    seg_list = list(seg_list)  # 返回值并不是list类型，因此需要转换
-    i = 0
+    seg_list = segmentor.segment(content)  # 分词
+    seg_list = list(seg_list)  # 返回值并不是list类型，因此需要转换为list
+
     # LTP不能很好地处理回车，因此需要去除回车给分词带来的干扰。
     # LTP也不能很好地处理数字，可能把一串数字分成好几个单词，因此需要连接可能拆开的数字
+    i = 0
     while i < len(seg_list):
         # 如果单词里包含回车，则需要分三种情况处理
         if '\n' in seg_list[i] and len(seg_list[i]) > 1:
@@ -50,10 +52,12 @@ with open("/home/zhangshiwei/Event-Extraction/01数据预处理/preprocessed_dat
 
         i += 1
 
+    # 词性标注
     postagger = Postagger()  # 初始化词性标注实例
     postagger.load(pos_model_path)  # 加载模型
     postags = postagger.postag(seg_list)  # 词性标注
 
+    # 命名实体识别
     recognizer = NamedEntityRecognizer()  # 初始化命名实体识别实例
     recognizer.load(ner_model_path)  # 加载模型
     netags = recognizer.recognize(seg_list, postags)  # 命名实体识别
@@ -63,13 +67,11 @@ with open("/home/zhangshiwei/Event-Extraction/01数据预处理/preprocessed_dat
         os.remove("分词_词性标注_命名实体识别_结果.txt")
 
     f2 = open("分词_词性标注_命名实体识别_结果.txt", "a", encoding='utf-8')
-
     for word, postag, netag in zip(seg_list, postags, netags):
         if word == '\n':
             f2.write('\n')
         else:
             f2.write(word + " " + postag + " " + netag + "\n")
-
     f2.close()
 
     # 释放模型
