@@ -179,14 +179,16 @@ def label_case(file, is_label=False):
     # 分类
     if is_label:
         for i in range(len(labels)):
-            if 0 <= labels[i] <= 12:
+            if 0 <= labels[i] <= 5:
                 labels[i] = 0
-            elif 13 <= labels[i] <= 35:
+            elif 6 <= labels[i] <= 18:
                 labels[i] = 1
-            # elif 25 <= labels[i] <= 35:
-            #     labels[i] = 2
-            else:
+            elif 19 <= labels[i] <= 24:
                 labels[i] = 2
+            elif 25 <= labels[i] <= 36:
+                labels[i] = 3
+            else:
+                labels[i] = 4
     f.close()
     return labels
 

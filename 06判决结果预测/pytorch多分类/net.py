@@ -7,6 +7,8 @@ from torch.autograd import Variable
 from torch.utils.data import DataLoader
 from torch.utils.data import Dataset
 import csv
+import os
+import collections
 
 
 class MyDataset(Dataset):
@@ -22,9 +24,9 @@ class MyDataset(Dataset):
         return self.x_data[idx], self.y_data[idx]
 
 
-train_set = MyDataset("train5.csv")
+train_set = MyDataset("train16.csv")
 train_data = DataLoader(dataset=train_set, batch_size=32, shuffle=True)
-test_set = MyDataset("test5.csv")
+test_set = MyDataset("test16.csv")
 test_data = DataLoader(dataset=test_set, batch_size=32, shuffle=False)
 
 
@@ -32,9 +34,9 @@ class Net(nn.Module):
 
     def __init__(self):
         super(Net, self).__init__()
-        self.layer1 = nn.Linear(5, 64)
+        self.layer1 = nn.Linear(16, 64)
         self.layer2 = nn.Linear(64, 128)
-        self.layer3 = nn.Linear(128, 3)
+        self.layer3 = nn.Linear(128, 5)
 
     def forward(self, x):
         x = self.layer1(x)
@@ -66,9 +68,11 @@ def test():
     test_loss = 0
     # correct = 0
     # total = 0
-    correct = list(0 for i in range(3))
-    total = list(0 for i in range(3))
+    correct = list(0 for i in range(5))
+    total = list(0 for i in range(5))
 
+    if os.path.exists("result.csv"):
+        os.remove("result.csv")
     for pattern, target in test_data:
         pattern, target = Variable(pattern), Variable(target)
         output = net(pattern)
@@ -86,12 +90,12 @@ def test():
             label = target[i]
             correct[label] += res[i].item()
             total[label] += 1
-    for i in range(3):
+    for i in range(5):
         print("accu of {} :{}".format(i, correct[i] / total[i]))
         print("num of {} : {}".format(i, total[i]))
     print(sum(correct) / sum(total))
 
 
-for epoch in range(1, 201):
+for epoch in range(1, 1001):
     train(epoch)
 test()
