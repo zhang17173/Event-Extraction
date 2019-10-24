@@ -190,7 +190,7 @@ rows = []
 # 提取标签
 labels = label_case(
     "/home/zhangshiwei/Event-Extraction/01数据预处理/preprocessed_data.txt",
-    is_label=False)
+    is_label=True)
 num_cases = len(glob.glob(
     "/home/zhangshiwei/Event-Extraction/06判决结果预测/特征提取/data/单个案件/*.txt"))
 
