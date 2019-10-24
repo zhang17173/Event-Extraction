@@ -12,7 +12,7 @@ pos_model_path = os.path.join(LTP_DATA_DIR,
 ner_model_path = os.path.join(LTP_DATA_DIR,
                               'ner.model')  # 命名实体识别模型路径，模型名称为`ner.model`
 
-with open("/home/zhangshiwei/Event-Extraction/01数据预处理/preprocessed_data.txt", "r", encoding='utf-8') as f1:
+with open("../../../01数据预处理/preprocessed_data.txt", "r", encoding='utf-8') as f1:
     content = f1.read()
 
     # 分词
