@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/01数据预处理/original_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/01数据预处理/original_data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/01数据预处理/preprocessed_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/01数据预处理/preprocessed_data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/02分词/分词算法/05LTP分词/分词_词性标注_命名实体识别_结果.txt" beforeDir="false" afterPath="$PROJECT_DIR$/02分词/分词算法/05LTP分词/分词_词性标注_命名实体识别_结果.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/pytorch多分类/data_without_error.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/pytorch多分类/net.py" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/pytorch多分类/net.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/pytorch多分类/result.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/pytorch多分类/test16.csv" beforeDir="false" />
@@ -14,7 +15,7 @@
       <change beforePath="$PROJECT_DIR$/06判决结果预测/pytorch多分类/train5.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/pytorch多分类/数据预处理.py" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/pytorch多分类/数据预处理.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/pytorch多分类/结果分析.py" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/pytorch多分类/结果分析.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/10.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/100.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/100.txt" afterDir="false" />
@@ -5254,85 +5255,798 @@
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14710.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14710.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14711.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14711.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14712.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14712.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14713.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14713.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14714.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14714.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14715.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14715.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14716.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14716.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14717.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14717.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14718.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14718.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14719.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14719.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1472.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1472.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14720.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14720.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14721.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14721.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14722.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14722.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14723.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14723.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14724.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14724.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14725.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14725.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14726.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14726.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14727.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14727.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14728.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14728.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14729.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14729.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1473.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1473.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14730.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14730.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14731.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14731.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14732.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14732.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14733.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14733.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14734.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14734.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14735.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14735.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14736.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14736.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14737.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14737.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14738.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14738.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14739.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14739.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1474.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1474.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14740.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14740.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14741.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14741.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14742.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14742.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14743.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14743.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14744.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14744.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14745.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14745.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14746.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14746.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14747.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14747.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14748.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14748.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14749.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14749.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1475.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1475.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14750.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14750.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14751.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14751.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14752.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14752.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14753.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14753.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14754.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14754.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14755.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14755.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14756.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14756.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14757.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14757.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14758.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14758.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14759.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14759.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1476.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1476.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14760.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14760.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14761.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14761.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14762.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14762.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14763.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14763.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14764.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14764.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14765.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14765.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14766.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14766.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14767.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14767.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14768.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14768.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14769.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14769.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1477.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1477.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14770.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14770.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14771.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14771.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14772.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14772.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14773.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14773.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14774.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14774.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14775.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14775.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14776.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14776.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14777.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14777.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14778.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14778.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14779.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14779.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1478.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1478.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14780.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14780.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14781.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14781.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14782.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14782.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14783.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14783.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14784.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14784.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14785.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14785.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14786.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14786.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14787.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14787.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14788.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14788.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14789.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14789.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1479.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1479.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14790.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14790.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14791.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14791.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14792.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14792.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14793.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14793.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14794.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14794.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14795.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14795.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14796.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14796.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14797.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14797.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14798.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14798.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14799.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14799.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/148.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/148.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1480.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1480.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14800.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14800.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14801.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14801.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14802.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14802.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14803.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14803.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14804.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14804.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14805.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14805.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14806.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14806.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14807.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14807.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14808.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14808.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14809.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14809.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1481.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1481.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14810.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14810.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14811.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14811.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14812.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14812.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14813.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14813.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14814.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14814.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14815.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14815.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14816.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14816.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14817.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14817.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14818.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14818.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14819.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14819.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1482.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1482.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14820.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14820.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14821.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14821.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14822.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14822.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14823.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14823.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14824.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14824.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14825.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14825.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14826.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14826.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14827.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14827.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14828.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14828.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14829.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14829.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1483.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1483.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14830.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14830.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14831.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14831.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14832.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14832.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14833.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14833.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14834.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14834.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14835.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14835.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14836.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14836.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14837.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14837.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14838.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14838.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14839.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14839.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1484.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1484.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14840.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14840.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14841.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14841.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14842.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14842.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14843.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14843.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14844.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14844.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14845.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14845.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14846.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14846.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14847.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14847.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14848.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14848.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14849.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14849.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1485.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1485.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14850.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14850.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14851.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14851.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14852.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14852.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14853.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14853.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14854.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14854.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14855.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14855.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14856.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14856.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14857.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14857.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14858.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14858.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14859.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14859.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1486.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1486.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14860.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14860.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14861.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14861.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14862.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14862.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14863.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14863.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14864.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14864.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14865.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14865.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14866.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14866.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14867.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14867.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14868.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14868.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14869.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14869.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1487.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1487.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14870.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14870.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14871.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14871.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14872.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14872.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14873.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14873.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14874.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14874.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14875.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14875.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14876.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14876.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14877.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14877.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14878.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14878.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14879.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14879.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1488.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1488.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14880.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14880.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14881.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14881.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14882.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14882.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14883.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14883.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14884.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14884.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14885.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14885.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14886.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14886.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14887.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14887.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14888.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14888.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14889.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14889.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1489.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1489.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14890.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14890.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14891.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14891.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14892.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14892.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14893.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14893.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14894.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14894.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14895.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14895.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14896.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14896.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14897.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14897.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14898.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14898.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14899.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14899.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/149.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/149.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1490.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1490.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14900.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14900.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14901.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14901.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14902.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14902.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14903.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14903.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14904.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14904.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14905.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14905.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14906.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14906.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14907.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14907.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14908.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14908.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14909.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14909.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1491.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1491.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14910.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14910.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14911.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14911.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14912.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14912.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14913.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14913.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14914.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14914.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14915.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14915.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14916.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14916.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14917.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14917.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14918.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14918.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14919.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14919.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1492.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1492.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14920.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14920.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14921.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14921.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14922.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14922.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14923.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14923.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14924.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14924.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14925.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14925.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14926.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14926.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14927.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14927.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14928.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14928.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14929.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14929.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1493.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1493.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14930.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14930.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14931.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14931.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14932.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14932.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14933.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14933.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14934.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14934.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14935.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14935.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14936.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14936.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14937.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14937.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14938.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14938.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14939.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14939.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1494.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1494.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14940.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14940.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14941.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14941.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14942.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14942.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14943.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14943.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14944.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14944.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14945.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14945.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14946.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14946.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14947.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14947.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14948.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14948.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14949.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14949.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1495.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1495.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14950.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14950.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14951.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14951.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14952.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14952.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14953.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14953.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14954.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14954.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14955.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14955.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14956.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14956.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14957.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14957.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14958.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14958.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14959.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14959.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1496.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1496.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14960.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14960.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14961.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14961.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14962.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14962.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14963.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14963.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14964.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14964.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14965.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14965.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14966.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14966.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14967.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14967.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14968.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14968.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14969.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14969.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1497.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1497.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14970.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14970.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14971.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14971.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14972.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14972.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14973.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14973.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14974.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14974.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14975.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14975.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14976.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14976.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14977.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14977.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14978.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14978.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14979.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14979.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1498.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1498.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14980.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14980.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14981.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14981.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14982.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14982.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14983.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14983.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14984.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14984.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14985.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14985.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14986.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14986.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14987.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14987.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14988.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14988.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14989.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14989.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1499.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1499.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14990.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14990.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14991.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14991.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14992.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14992.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14993.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14993.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14994.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14994.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14995.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14995.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14996.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14996.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14997.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14997.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14998.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14998.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14999.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/14999.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/150.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/150.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1500.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1500.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15001.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15001.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15002.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15002.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15003.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15003.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15004.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15004.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15005.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15005.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15006.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15006.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15007.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15007.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15008.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15008.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15009.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15009.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1501.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1501.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15010.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15010.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15011.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15011.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15012.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15012.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15013.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15013.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15014.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15014.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15015.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15015.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15016.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15016.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15017.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15017.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15018.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15018.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15019.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15019.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1502.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1502.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15020.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15020.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15021.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15021.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15022.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15022.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15023.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15023.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15024.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15024.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15025.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15025.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15026.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15026.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15027.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15027.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15028.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15028.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15029.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15029.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1503.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1503.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15030.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15030.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15031.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15031.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15032.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15032.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15033.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15033.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15034.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15034.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15035.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15035.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15036.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15036.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15037.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15037.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15038.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15038.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15039.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15039.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1504.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1504.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15040.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15040.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15041.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15041.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15042.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15042.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15043.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15043.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15044.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15044.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15045.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15045.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15046.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15046.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15047.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15047.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15048.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15048.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15049.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15049.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1505.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1505.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15050.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15050.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15051.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15051.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15052.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15052.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15053.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15053.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15054.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15054.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15055.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15055.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15056.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15056.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15057.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15057.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15058.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15058.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15059.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15059.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1506.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1506.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15060.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15060.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15061.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15061.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15062.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15062.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15063.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15063.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15064.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15064.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15065.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15065.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15066.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15066.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15067.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15067.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15068.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15068.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15069.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15069.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1507.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1507.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15070.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15070.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15071.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15071.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15072.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15072.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15073.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15073.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15074.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15074.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15075.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15075.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15076.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15076.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15077.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15077.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15078.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15078.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15079.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15079.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1508.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1508.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15080.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15080.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15081.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15081.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15082.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15082.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15083.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15083.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15084.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15084.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15085.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15085.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15086.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15086.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15087.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15087.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15088.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15088.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15089.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15089.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1509.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1509.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15090.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15090.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15091.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15091.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15092.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15092.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15093.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15093.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15094.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15094.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15095.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15095.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15096.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15096.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15097.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15097.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15098.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15098.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15099.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15099.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/151.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/151.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1510.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1510.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15100.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15100.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15101.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15101.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15102.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15102.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15103.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15103.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15104.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15104.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15105.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15105.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15106.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15106.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15107.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15107.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15108.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15108.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15109.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15109.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1511.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1511.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15110.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15110.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15111.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15111.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15112.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15112.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15113.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15113.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15114.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15114.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15115.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15115.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15116.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15116.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15117.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15117.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15118.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15118.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15119.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15119.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1512.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1512.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15120.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15120.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15121.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15121.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15122.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15122.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15123.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15123.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15124.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15124.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15125.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15125.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15126.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15126.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15127.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15127.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15128.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15128.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15129.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15129.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1513.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1513.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15130.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15130.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15131.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15131.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15132.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15132.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15133.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15133.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15134.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15134.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15135.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15135.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15136.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15136.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15137.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15137.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15138.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15138.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15139.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15139.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1514.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1514.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15140.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15140.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15141.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15141.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15142.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15142.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15143.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15143.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15144.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15144.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15145.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15145.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15146.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15146.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15147.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15147.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15148.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15148.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15149.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15149.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1515.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1515.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15150.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15150.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15151.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15151.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15152.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15152.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15153.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15153.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15154.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15154.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15155.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15155.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15156.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15156.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15157.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15157.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15158.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15158.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15159.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15159.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1516.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1516.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15160.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15160.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15161.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15161.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15162.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15162.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15163.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15163.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15164.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15164.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15165.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15165.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15166.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15166.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15167.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15167.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15168.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15168.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15169.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15169.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1517.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1517.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15170.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15170.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15171.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15171.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15172.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15172.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15173.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15173.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15174.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15174.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15175.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15175.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15176.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15176.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15177.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15177.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15178.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15178.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15179.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15179.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1518.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1518.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15180.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15180.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15181.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15181.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15182.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15182.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15183.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15183.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15184.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15184.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15185.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15185.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15186.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15186.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15187.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15187.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15188.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15188.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15189.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15189.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1519.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1519.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15190.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15190.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15191.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15191.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15192.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15192.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15193.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15193.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15194.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15194.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15195.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15195.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15196.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15196.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15197.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15197.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15198.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15198.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15199.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15199.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/152.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/152.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1520.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1520.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15200.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15200.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15201.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15201.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15202.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15202.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15203.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15203.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15204.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15204.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15205.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15205.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15206.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15206.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15207.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15207.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15208.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15208.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15209.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15209.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1521.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1521.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15210.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15210.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15211.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15211.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15212.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15212.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15213.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15213.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15214.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15214.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15215.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15215.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15216.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15216.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15217.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15217.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15218.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15218.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15219.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15219.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1522.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1522.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15220.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15220.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15221.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15221.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15222.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15222.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15223.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15223.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15224.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15224.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15225.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15225.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15226.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15226.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15227.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15227.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15228.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15228.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15229.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15229.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1523.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1523.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15230.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15230.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15231.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15231.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15232.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15232.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15233.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15233.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15234.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15234.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15235.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15235.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15236.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15236.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15237.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15237.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15238.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15238.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15239.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15239.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1524.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1524.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15240.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15240.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15241.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15241.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15242.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15242.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15243.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15243.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15244.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15244.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15245.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15245.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15246.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15246.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15247.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15247.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15248.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15248.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15249.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15249.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1525.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1525.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15250.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15250.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15251.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15251.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15252.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15252.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15253.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15253.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15254.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15254.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15255.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15255.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15256.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15256.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15257.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15257.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15258.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15258.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15259.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15259.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1526.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1526.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15260.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15260.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15261.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15261.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15262.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15262.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15263.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15263.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15264.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15264.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15265.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15265.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15266.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15266.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15267.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15267.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15268.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15268.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15269.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15269.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1527.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1527.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15270.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15270.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15271.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15271.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15272.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15272.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15273.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15273.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15274.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15274.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15275.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15275.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15276.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15276.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15277.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15277.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15278.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15278.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15279.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15279.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1528.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1528.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15280.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15280.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15281.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15281.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15282.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15282.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15283.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15283.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15284.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15284.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15285.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15285.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15286.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15286.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15287.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15287.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15288.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15288.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15289.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15289.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1529.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1529.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15290.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15290.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15291.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15291.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15292.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15292.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15293.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15293.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15294.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15294.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15295.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15295.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15296.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15296.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15297.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15297.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15298.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15298.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15299.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15299.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/153.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/153.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1530.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1530.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15300.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15300.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15301.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15301.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15302.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15302.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15303.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15303.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15304.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15304.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15305.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15305.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15306.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15306.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15307.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15307.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15308.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15308.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15309.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15309.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1531.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1531.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15310.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15310.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15311.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15311.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15312.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15312.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15313.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15313.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15314.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15314.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15315.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15315.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15316.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15316.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15317.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15317.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15318.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15318.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15319.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15319.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1532.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1532.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15320.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15320.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15321.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15321.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15322.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15322.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15323.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15323.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15324.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15324.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15325.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15325.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15326.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15326.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15327.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15327.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15328.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15328.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15329.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15329.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1533.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1533.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15330.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15330.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15331.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15331.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15332.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15332.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15333.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15333.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15334.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15334.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15335.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15335.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15336.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15336.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15337.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15337.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15338.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15338.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15339.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15339.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1534.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1534.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15340.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15340.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15341.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15341.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15342.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15342.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15343.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15343.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15344.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15344.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15345.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15345.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15346.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15346.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15347.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15347.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15348.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15348.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15349.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15349.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1535.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1535.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15350.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15350.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15351.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15351.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15352.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15352.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15353.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15353.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15354.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15354.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15355.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15355.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15356.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15356.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15357.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15357.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15358.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15358.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15359.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15359.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1536.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1536.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15360.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15360.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15361.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15361.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15362.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15362.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15363.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15363.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15364.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15364.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15365.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15365.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15366.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15366.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15367.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15367.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15368.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15368.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15369.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15369.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1537.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1537.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15370.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15370.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15371.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15371.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15372.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15372.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15373.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15373.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15374.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15374.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15375.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15375.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15376.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15376.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15377.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15377.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15378.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15378.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15379.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15379.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1538.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1538.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15380.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15380.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15381.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15381.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15382.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15382.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15383.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15383.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15384.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15384.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15385.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15385.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15386.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15386.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15387.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15387.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15388.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15388.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15389.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15389.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1539.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1539.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15390.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15390.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15391.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15391.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15392.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15392.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15393.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15393.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15394.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15394.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15395.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15395.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15396.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15396.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15397.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15397.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15398.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15398.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15399.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15399.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/154.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/154.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1540.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1540.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15400.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15400.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15401.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15401.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15402.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15402.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15403.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15403.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15404.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15404.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15405.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15405.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15406.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15406.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15407.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15407.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15408.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15408.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15409.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15409.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1541.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1541.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15410.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15410.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15411.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15411.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15412.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15412.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15413.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15413.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15414.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15414.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15415.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15415.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15416.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15416.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15417.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15417.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15418.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15418.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15419.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15419.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1542.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1542.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15420.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15420.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15421.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15421.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15422.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15422.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15423.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15423.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15424.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15424.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15425.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/15425.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1543.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1543.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1544.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1544.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1545.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/1545.txt" afterDir="false" />
@@ -13383,6 +14097,7 @@
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/8787.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/8787.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/8788.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/8788.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/8789.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/8789.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/879.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/879.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/8790.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/8790.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/8791.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/8791.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/8792.txt" beforeDir="false" afterPath="$PROJECT_DIR$/06判决结果预测/特征提取/data/单个案件/8792.txt" afterDir="false" />
@@ -14770,7 +15485,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.数据预处理">
+  <component name="RunManager" selected="Python.结果分析">
     <configuration name="数据预处理" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -14785,6 +15500,72 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06判决结果预测/pytorch多分类/数据预处理.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="切割完整数据" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/06判决结果预测/特征提取/data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06判决结果预测/特征提取/data/切割完整数据.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="特征提取" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/06判决结果预测/特征提取" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06判决结果预测/特征提取/特征提取.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="结果分析" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/06判决结果预测/pytorch多分类" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/06判决结果预测/pytorch多分类/结果分析.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -14969,33 +15750,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="data_preprocess" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="git" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01数据预处理" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01数据预处理/data_preprocess.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.结果分析" />
         <item itemvalue="Python.数据预处理" />
+        <item itemvalue="Python.特征提取" />
+        <item itemvalue="Python.切割完整数据" />
         <item itemvalue="Python.LTP分词_词性标注_命名实体识别" />
-        <item itemvalue="Python.data_preprocess" />
       </list>
     </recent_temporary>
   </component>
@@ -15018,6 +15779,7 @@
       <workItem from="1571801958337" duration="626000" />
       <workItem from="1571806087250" duration="9227000" />
       <workItem from="1571843392751" duration="3491000" />
+      <workItem from="1571901788049" duration="3938000" />
     </task>
     <servers />
   </component>
@@ -15038,11 +15800,11 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Event_Extraction$data_preprocess.coverage" NAME="data_preprocess Coverage Results" MODIFIED="1571806098376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01数据预处理" />
-    <SUITE FILE_PATH="coverage/Event_Extraction$pytest_in_net_py.coverage" NAME="pytest in net.py Coverage Results" MODIFIED="1571721850085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/06判决结果预测/pytorch多分类" />
-    <SUITE FILE_PATH="coverage/Event_Extraction$.coverage" NAME="数据预处理 Coverage Results" MODIFIED="1571817239354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/06判决结果预测/pytorch多分类" />
-    <SUITE FILE_PATH="coverage/git$data_preprocess.coverage" NAME="data_preprocess Coverage Results" MODIFIED="1571640878867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01数据预处理" />
-    <SUITE FILE_PATH="coverage/Event_Extraction$LTP__.coverage" NAME="LTP分词_词性标注_命名实体识别 Coverage Results" MODIFIED="1571806133405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/02分词/分词算法/05LTP分词" />
+    <SUITE FILE_PATH="coverage/Event_Extraction$data_preprocess.coverage" NAME="data_preprocess Coverage Results" MODIFIED="1571901836574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01数据预处理" />
     <SUITE FILE_PATH="coverage/git$.coverage" NAME="数据预处理 Coverage Results" MODIFIED="1571846480796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/06判决结果预测/pytorch多分类" />
+    <SUITE FILE_PATH="coverage/git$data_preprocess.coverage" NAME="data_preprocess Coverage Results" MODIFIED="1571640878867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01数据预处理" />
+    <SUITE FILE_PATH="coverage/Event_Extraction$LTP__.coverage" NAME="LTP分词_词性标注_命名实体识别 Coverage Results" MODIFIED="1571901883776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/02分词/分词算法/05LTP分词" />
+    <SUITE FILE_PATH="coverage/Event_Extraction$pytest_in_net_py.coverage" NAME="pytest in net.py Coverage Results" MODIFIED="1571721850085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/06判决结果预测/pytorch多分类" />
+    <SUITE FILE_PATH="coverage/Event_Extraction$.coverage" NAME="结果分析 Coverage Results" MODIFIED="1571904818552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/06判决结果预测/pytorch多分类" />
   </component>
 </project>

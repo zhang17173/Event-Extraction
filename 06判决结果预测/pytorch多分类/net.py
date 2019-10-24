@@ -10,6 +10,8 @@ import csv
 import os
 import collections
 
+num_classes = 5
+
 
 class MyDataset(Dataset):
     def __init__(self, csv_file):
@@ -24,9 +26,9 @@ class MyDataset(Dataset):
         return self.x_data[idx], self.y_data[idx]
 
 
-train_set = MyDataset("train16.csv")
+train_set = MyDataset("train5.csv")
 train_data = DataLoader(dataset=train_set, batch_size=32, shuffle=True)
-test_set = MyDataset("test16.csv")
+test_set = MyDataset("test5.csv")
 test_data = DataLoader(dataset=test_set, batch_size=32, shuffle=False)
 
 
@@ -34,9 +36,9 @@ class Net(nn.Module):
 
     def __init__(self):
         super(Net, self).__init__()
-        self.layer1 = nn.Linear(16, 64)
+        self.layer1 = nn.Linear(5, 64)
         self.layer2 = nn.Linear(64, 128)
-        self.layer3 = nn.Linear(128, 5)
+        self.layer3 = nn.Linear(128, num_classes)
 
     def forward(self, x):
         x = self.layer1(x)
@@ -68,8 +70,8 @@ def test():
     test_loss = 0
     # correct = 0
     # total = 0
-    correct = list(0 for i in range(5))
-    total = list(0 for i in range(5))
+    correct = list(0 for i in range(num_classes))
+    total = list(0 for i in range(num_classes))
 
     if os.path.exists("result.csv"):
         os.remove("result.csv")
@@ -90,12 +92,12 @@ def test():
             label = target[i]
             correct[label] += res[i].item()
             total[label] += 1
-    for i in range(5):
+    for i in range(num_classes):
         print("accu of {} :{}".format(i, correct[i] / total[i]))
         print("num of {} : {}".format(i, total[i]))
     print(sum(correct) / sum(total))
 
 
-for epoch in range(1, 1001):
+for epoch in range(1, 2001):
     train(epoch)
 test()

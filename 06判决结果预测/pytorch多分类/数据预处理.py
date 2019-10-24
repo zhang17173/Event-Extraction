@@ -12,12 +12,12 @@ def data_split(data_csv):
         f_csv = csv.reader(f)
         rows = list(f_csv)
         # 前13000条作为训练集
-        rows_train = rows[:13000]
-        rows_test = rows[13000:]
-        with open("train16.csv", "w") as f_train:
+        rows_train = rows[:15000]
+        rows_test = rows[15000:]
+        with open("train16_noises.csv", "w") as f_train:
             f_train_csv = csv.writer(f_train)
             f_train_csv.writerows(rows_train)
-        with open("test16.csv", "w") as f_test:
+        with open("test16_noises.csv", "w") as f_test:
             f_test_csv = csv.writer(f_test)
             f_test_csv.writerows(rows_test)
 
@@ -95,7 +95,7 @@ def remove_error(csv_file1, csv_file2):
             f2_csv.writerows(cases_without_noises)
 
 
-# remove_error("/Users/zhangshiwei/git/06判决结果预测/特征提取/data.csv", "data_without_error.csv")
-data_split("/Users/zhangshiwei/git/06判决结果预测/特征提取/data.csv")
-patterns_weight("train16.csv", "train5.csv")
-patterns_weight("test16.csv", "test5.csv")
+# remove_error("/home/zhangshiwei/Event-Extraction/06判决结果预测/特征提取/data.csv", "data_without_error.csv")
+data_split("/home/zhangshiwei/Event-Extraction/06判决结果预测/特征提取/data.csv")
+patterns_weight("train16_noises.csv", "train5_noises.csv")
+patterns_weight("test16_noises.csv", "test5_noises.csv")
