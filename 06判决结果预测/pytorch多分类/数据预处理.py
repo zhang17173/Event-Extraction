@@ -41,8 +41,7 @@ def patterns_weight(csv_file, new_csv_file):
         temp_dict["02责任认定"] = 10 if origin_patterns[2] == 1 else 8
         # 酒后驾驶、吸毒后驾驶、无证驾驶、无牌驾驶、不安全驾驶、超载、逃逸
         temp_dict["03违章情况"] = origin_patterns[3] * 15 + origin_patterns[4] * 20 + origin_patterns[5] * 10 + \
-            origin_patterns[6] * 10 + origin_patterns[7] * 5 + origin_patterns[8] * 10
-            # origin_patterns[9] * 30
+            origin_patterns[6] * 10 + origin_patterns[7] * 5 + origin_patterns[8] * 10 + origin_patterns[9] * 30
         # 抢救伤者、报警、现场等待、赔偿、认罪
         temp_dict["04案后表现"] = origin_patterns[10] * (-15) + origin_patterns[11] * (
             -30) + origin_patterns[12] * (-15) + origin_patterns[13] * (-25) + origin_patterns[14] * (-15)
