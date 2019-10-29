@@ -11,6 +11,7 @@ import os
 import collections
 
 num_classes = 5
+input_size = 6
 
 
 class MyDataset(Dataset):
@@ -26,9 +27,9 @@ class MyDataset(Dataset):
         return self.x_data[idx], self.y_data[idx]
 
 
-train_set = MyDataset("train5.csv")
+train_set = MyDataset("train6.csv")
 train_data = DataLoader(dataset=train_set, batch_size=32, shuffle=True)
-test_set = MyDataset("test5.csv")
+test_set = MyDataset("test6.csv")
 test_data = DataLoader(dataset=test_set, batch_size=32, shuffle=False)
 
 
@@ -36,7 +37,7 @@ class Net(nn.Module):
 
     def __init__(self):
         super(Net, self).__init__()
-        self.layer1 = nn.Linear(5, 64)
+        self.layer1 = nn.Linear(input_size, 64)
         self.layer2 = nn.Linear(64, 128)
         self.layer3 = nn.Linear(128, num_classes)
 
@@ -62,19 +63,19 @@ def train(epoch):
         loss = criterion(output, target)
         loss.backward()
         optimizer.step()
-        if batch_idx % 20 == 0:
+        if batch_idx % 100 == 0:
             print("Train Epoch: {} Loss: {:.6f}".format(epoch, loss.item()))
 
 
-def test():
+def final_test():
     test_loss = 0
-    # correct = 0
-    # total = 0
+
     correct = list(0 for i in range(num_classes))
     total = list(0 for i in range(num_classes))
 
     if os.path.exists("result.csv"):
         os.remove("result.csv")
+
     for pattern, target in test_data:
         pattern, target = Variable(pattern), Variable(target)
         output = net(pattern)
@@ -98,6 +99,6 @@ def test():
     print(sum(correct) / sum(total))
 
 
-for epoch in range(1, 2001):
+for epoch in range(1, 1001):
     train(epoch)
-test()
+final_test()

@@ -190,7 +190,7 @@ rows = []
 # 提取标签
 labels = label_case(
     "/home/zhangshiwei/Event-Extraction/01数据预处理/preprocessed_data.txt",
-    is_label=True)
+    is_label=False)
 num_cases = len(glob.glob(
     "/home/zhangshiwei/Event-Extraction/06判决结果预测/特征提取/data/单个案件/*.txt"))
 
@@ -216,7 +216,7 @@ for i in range(1, num_cases + 1):
 f1.close()
 
 # 写回数据
-with open("data.csv", "w", newline='') as f:
+with open("data_unlabeled.csv", "w", newline='') as f:
     f_csv = csv.DictWriter(f, headers)
     # f_csv.writeheader()
     f_csv.writerows(rows)

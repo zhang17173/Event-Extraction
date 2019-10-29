@@ -11,22 +11,22 @@ def data_split(data_csv):
     with open(data_csv) as f:
         f_csv = csv.reader(f)
         rows = list(f_csv)
-        # 前13000条作为训练集
-        rows_train = rows[:15000]
-        rows_test = rows[15000:]
-        with open("train16_noises.csv", "w") as f_train:
+        # 前18000条作为训练集
+        rows_train = rows[:18000]
+        rows_test = rows[18000:]
+        with open("train16.csv", "w") as f_train:
             f_train_csv = csv.writer(f_train)
             f_train_csv.writerows(rows_train)
-        with open("test16_noises.csv", "w") as f_test:
+        with open("test16.csv", "w") as f_test:
             f_test_csv = csv.writer(f_test)
             f_test_csv.writerows(rows_test)
 
 
 def patterns_weight(csv_file, new_csv_file):
     """
-    给特征加权，然后将16个特征变为5个特征，以缓解数据的稀疏性
+    给特征加权，然后将16个特征变为6个特征，以缓解数据的稀疏性
     :param csv_file: 源文件，16个特征
-    :param new_csv_file:加权合并之后的文件，5个特征
+    :param new_csv_file:加权合并之后的文件，6个特征
     :return:
     """
     f1 = np.loadtxt(csv_file, delimiter=',', dtype=np.int)
@@ -41,16 +41,17 @@ def patterns_weight(csv_file, new_csv_file):
         temp_dict["02责任认定"] = 10 if origin_patterns[2] == 1 else 8
         # 酒后驾驶、吸毒后驾驶、无证驾驶、无牌驾驶、不安全驾驶、超载、逃逸
         temp_dict["03违章情况"] = origin_patterns[3] * 15 + origin_patterns[4] * 20 + origin_patterns[5] * 10 + \
-            origin_patterns[6] * 10 + origin_patterns[7] * 5 + origin_patterns[8] * 10 + \
-            origin_patterns[9] * 30
+            origin_patterns[6] * 10 + origin_patterns[7] * 5 + origin_patterns[8] * 10
+            # origin_patterns[9] * 30
         # 抢救伤者、报警、现场等待、赔偿、认罪
         temp_dict["04案后表现"] = origin_patterns[10] * (-15) + origin_patterns[11] * (
             -30) + origin_patterns[12] * (-15) + origin_patterns[13] * (-25) + origin_patterns[14] * (-15)
         temp_dict["05初犯偶犯"] = 30 if origin_patterns[15] == 0 else -15
-        temp_dict["06判决结果"] = origin_patterns[-1]
+        temp_dict["06是否逃逸"] = origin_patterns[9]
+        temp_dict["07判决结果"] = origin_patterns[-1]
         new_csv_list.append(temp_dict)
     # 将新特征写回文件
-    headers = ["01伤亡情况", "02责任认定", "03违章情况", "04案后表现", "05初犯偶犯", "06判决结果"]
+    headers = ["01伤亡情况", "02责任认定", "03违章情况", "04案后表现", "05初犯偶犯", "06是否逃逸", "07判决结果"]
     with open(new_csv_file, "w", newline="")as f2:
         f_csv = csv.DictWriter(f2, headers)
         # f_csv.writeheader()
@@ -95,7 +96,16 @@ def remove_error(csv_file1, csv_file2):
             f2_csv.writerows(cases_without_noises)
 
 
-# remove_error("/home/zhangshiwei/Event-Extraction/06判决结果预测/特征提取/data.csv", "data_without_error.csv")
-data_split("/home/zhangshiwei/Event-Extraction/06判决结果预测/特征提取/data.csv")
-patterns_weight("train16_noises.csv", "train5_noises.csv")
-patterns_weight("test16_noises.csv", "test5_noises.csv")
+remove_error("/home/zhangshiwei/Event-Extraction/06判决结果预测/特征提取/data.csv", "data_without_error.csv")
+data_split("data_without_error.csv")
+patterns_weight("train16.csv", "train6.csv")
+patterns_weight("test16.csv", "test6.csv")
+
+# remove_error("/home/zhangshiwei/Event-Extraction/06判决结果预测/特征提取/data_unlabeled.csv", "data_unlabeled_without_error.csv")
+# print("Done!")
+# data_split("data_unlabeled_without_error.csv")
+# print("Done!")
+# patterns_weight("train16.csv", "train5.csv")
+# print("Done!")
+# patterns_weight("test16.csv", "test5.csv")
+# print("Done!")
