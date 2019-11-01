@@ -27,9 +27,9 @@ class MyDataset(Dataset):
         return self.x_data[idx], self.y_data[idx]
 
 
-train_set = MyDataset("train6.csv")
+train_set = MyDataset("data/train6.csv")
 train_data = DataLoader(dataset=train_set, batch_size=32, shuffle=True)
-test_set = MyDataset("test6.csv")
+test_set = MyDataset("data/test6.csv")
 test_data = DataLoader(dataset=test_set, batch_size=32, shuffle=False)
 
 

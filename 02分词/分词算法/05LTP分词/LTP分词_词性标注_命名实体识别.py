@@ -63,10 +63,7 @@ with open("../../../01数据预处理/preprocessed_data.txt", "r", encoding='utf
     netags = recognizer.recognize(seg_list, postags)  # 命名实体识别
 
     # 写入结果
-    if os.path.exists("分词_词性标注_命名实体识别_结果.txt"):
-        os.remove("分词_词性标注_命名实体识别_结果.txt")
-
-    f2 = open("分词_词性标注_命名实体识别_结果.txt", "a", encoding='utf-8')
+    f2 = open("分词_词性标注_命名实体识别_结果.txt", "w", encoding='utf-8')
     for word, postag, netag in zip(seg_list, postags, netags):
         if word == '\n':
             f2.write('\n')

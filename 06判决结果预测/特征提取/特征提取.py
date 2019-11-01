@@ -71,6 +71,8 @@ def get_event_elements(case_file):
             N.append("无证驾驶")
         if "无号牌" in case or "牌照" in case or "无牌" in case:
             N.append("无牌驾驶")
+        if "酒" in case:
+            N.append("酒后驾驶")
         if "吸毒" in case or "毒品" in case or "毒驾" in case:
             N.append("吸毒后驾驶")
         if "超载" in case:

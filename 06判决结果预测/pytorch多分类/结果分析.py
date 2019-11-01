@@ -76,7 +76,7 @@ f5_csv = list(csv.reader(f5))
 f4 = open("analysis.txt", "a", encoding="utf-8")
 for i in range(len(f2_csv)):
     if f2_csv[i][1] == '4' and f2_csv[i][-1] != f2_csv[i][1]:
-        f4.write(cases[15000 + i])
+        f4.write(cases[20000 + i])
         f4.write("真实判决结果：" + f5_csv[i][-1] + "\n")
         f4.write("消噪后的类别：" + str(f2_csv[i][1]) + "\n" + "预测类别：" + str(f2_csv[i][-1]) + "\n")
         f4.write("16维特征：" + ' '.join(f3_csv[i]) + '\n')
