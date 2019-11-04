@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
+import os
 from pyltp import NamedEntityRecognizer
 from pyltp import Postagger
 from pyltp import Segmentor
-import os
 
 LTP_DATA_DIR = '/home/zhangshiwei/ltp_data_v3.4.0/'  # ltp模型目录的路径，根据实际情况修改
 cws_model_path = os.path.join(LTP_DATA_DIR,
