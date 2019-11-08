@@ -8,10 +8,10 @@ from torch.utils.data import DataLoader
 from torch.utils.data import Dataset
 import csv
 import os
-import collections
 
 num_classes = 5
 input_size = 6
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 class MyDataset(Dataset):
@@ -49,21 +49,21 @@ class Net(nn.Module):
         return self.layer3(x)
 
 
-net = Net()
+net = Net().to(DEVICE)
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.SGD(net.parameters(), lr=0.00001)
+optimizer = optim.Adam(net.parameters(), lr=0.00001)
 
 
 def train(epoch):
     for batch_idx, (data, target) in enumerate(train_data):
-        data, target = Variable(data), Variable(target)
+        data, target = Variable(data).to(DEVICE), Variable(target).to(DEVICE)
         optimizer.zero_grad()
         output = net(data)
 
         loss = criterion(output, target)
         loss.backward()
         optimizer.step()
-        if batch_idx % 100 == 0:
+        if (batch_idx + 1) % 200 == 0:
             print("Train Epoch: {} Loss: {:.6f}".format(epoch, loss.item()))
 
 
@@ -77,7 +77,7 @@ def final_test():
         os.remove("result.csv")
 
     for pattern, target in test_data:
-        pattern, target = Variable(pattern), Variable(target)
+        pattern, target = Variable(pattern).to(DEVICE), Variable(target).to(DEVICE)
         output = net(pattern)
         test_loss += criterion(output, target).item()
 
@@ -99,6 +99,6 @@ def final_test():
     print(sum(correct) / sum(total))
 
 
-for epoch in range(1, 1001):
+for epoch in range(1, 201):
     train(epoch)
 final_test()
