@@ -44,7 +44,7 @@ net = Net()
 loss = nn.MSELoss()
 optimizer = optim.Adam(net.parameters(), lr=0.001)
 
-num_epochs = 50
+num_epochs = 10
 for epoch in range(1, num_epochs + 1):
     for x, y in train_data_iter:
         output = net(x)
@@ -55,13 +55,13 @@ for epoch in range(1, num_epochs + 1):
     print('epoch %d, loss: %f' % (epoch, l.item()))
 
 
-def test():
+def net_test():
     output = net(test_features)
     l = loss(output, test_labels.view(-1, 1))
     print('test loss: %f' % (l.item()))
 
-    # for pred, label in zip(output, test_labels):
-    #     print(label, pred.item())
+    for pred, label in list(zip(output, test_labels))[:20]:
+        print(label, pred.item())
 
 
-test()
+net_test()
