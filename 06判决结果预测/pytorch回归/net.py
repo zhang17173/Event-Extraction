@@ -8,12 +8,12 @@ import torch.optim as optim
 num_input = 6
 num_examples = 20000
 
-train_data = np.loadtxt("./data/train6.csv", delimiter=",")
+train_data = np.loadtxt("06判决结果预测/pytorch回归/data/train6.csv", delimiter=",")
 train_features, train_labels = train_data[:, :-1], train_data[:, -1]
 train_features = torch.tensor(train_features, dtype=torch.float)
 train_labels = torch.tensor(train_labels, dtype=torch.float)
 
-test_data = np.loadtxt("./data/test6.csv", delimiter=",")
+test_data = np.loadtxt("06判决结果预测/pytorch回归/data/test6.csv", delimiter=",")
 test_features, test_labels = test_data[:, :-1], test_data[:, -1]
 test_features = torch.tensor(test_features, dtype=torch.float)
 test_labels = torch.tensor(test_labels, dtype=torch.float)
@@ -60,8 +60,10 @@ def net_test():
     l = loss(output, test_labels.view(-1, 1))
     print('test loss: %f' % (l.item()))
 
+    print("\n真实值\t预测值\t误差")
     for pred, label in list(zip(output, test_labels))[:20]:
-        print(label, pred.item())
+        print("%.1f\t%.1f\t%.1f" %
+              (label.item(), pred.item(), abs(label.item()-pred.item())))
 
 
 net_test()
