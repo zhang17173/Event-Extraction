@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # _*_coding:utf-8 _*_
 # @Author:Zhang Shiwei
-# @Date  :2019-07-30
 
 import logging
 from gensim.models import word2vec
@@ -11,9 +10,11 @@ from scipy import linalg
 logging.basicConfig(
     format='%(asctime)s : %(levelname)s : %(message)s',
     level=logging.INFO)
+
 # 使用gensim中的word2vec模块
 sentences = word2vec.LineSentence('案件.txt')
 model = word2vec.Word2Vec(sentences, hs=1, min_count=1, window=5, size=100)
+
 
 # req_count = 5
 # for key in model.wv.similar_by_word('被告人', topn=100):
