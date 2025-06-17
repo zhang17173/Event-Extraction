@@ -1,5 +1,4 @@
 # 针对法律裁判文书的案情抽取及其应用
-[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
 
 ## 简介
 针对交通肇事案件的裁判文书进行事件要素抽取，并在此基础上加入判决结果预测、案件相似度匹配等应用场景。
