@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.pyc
+.idea/
+*.iml
+
+# 运行过程中的中间文件
+01数据预处理/preprocessed_data.txt
+06判决结果预测/pytorch多分类/result.csv
+06判决结果预测/pytorch多分类/analysis.txt
+06判决结果预测/特征提取/data/单个案件/
+07案件相似度/pattern.csv
+07案件相似度/类似案件.txt

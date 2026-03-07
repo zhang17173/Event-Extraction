@@ -1,19 +1,26 @@
-import os
+from __future__ import annotations
 
-# 执行01数据预处理
-os.system("python /home/zhangshiwei/Event-Extraction/01数据预处理/data_preprocess.py")
+import argparse
+import sys
+from pathlib import Path
 
-# 执行02分词
-os.system("/home/zhangshiwei/Event-Extraction/02分词/分词算法/05LTP分词/LTP分词_词性标注_命名实体识别.py")
+ROOT = Path(__file__).resolve().parents[2]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
-# # 执行03 CRF事件抽取
-# os.remove("/home/zhangshiwei/CRF++-0.58/data/result.txt")
-# os.system(
-#     "/home/zhangshiwei/CRF++-0.58/crf_test -m /home/zhangshiwei/CRF++-0.58/model /home/zhangshiwei/Event-Extraction/02分词/分词算法/05LTP分词/分词_词性标注_命名实体识别_结果.txt >> /home/zhangshiwei/CRF++-0.58/data/result.txt")
-#
-# # 执行特征提取
-# os.system("python /home/zhangshiwei/Event-Extraction/06判决结果预测/特征提取/特征提取.py")
-#
-# # 执行数据预处理
-# os.system("/home/zhangshiwei/Event-Extraction/06判决结果预测/特征提取/data/切割完整数据.py")
-# os.system("/home/zhangshiwei/Event-Extraction/06判决结果预测/pytorch多分类/数据预处理.py")
+from project_utils import python_executable, run_command
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="一键执行判决结果预测主流程。")
+    parser.add_argument("--skip-train", action="store_true", help="只生成数据，不训练模型。")
+    args = parser.parse_args()
+
+    command = [python_executable(), str(ROOT / "run_project.py")]
+    if args.skip_train:
+        command.append("--skip-train")
+    run_command(command, cwd=ROOT)
+
+
+if __name__ == "__main__":
+    main()

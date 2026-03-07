@@ -36,11 +36,11 @@ def func(file_name):
                 words.append(content[0])
                 element_type.append(content[-1])
                 j = index + 1
-                while "I" in new_contents[j][-1] or "E" in new_contents[j][-1]:
+                while j < len(new_contents) and ("I" in new_contents[j][-1] or "E" in new_contents[j][-1]):
                     words[-1] = words[-1] + new_contents[j][0]
-                    j += 1
-                    if j == len(new_contents):
+                    if "E" in new_contents[j][-1]:
                         break
+                    j += 1
         T = []
         K = []
         D = []
@@ -76,5 +76,5 @@ def func(file_name):
 
     return result
 
-
-func("元数据/1.txt")
+if __name__ == "__main__":
+    func("元数据/1.txt")

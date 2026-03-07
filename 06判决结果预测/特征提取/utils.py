@@ -67,7 +67,7 @@ def per_num(text):
         else:
             num = text2num(r2)
     else:
-        num = string[0]
+        num = int(string[0])
     return num
 
 
@@ -102,7 +102,7 @@ def extract_seg(content):
 # num1, num2, num3 = extract_seg("8	被告人宋慧勇发生重大事故导致两人死亡被告人负事故全部责任行为经构成交通肇事罪应予惩处公诉机关指控罪名成立鉴于被告人案发后能够自动投案如实供述自己罪行依法应当认定为自首可以从轻处罚经本院告知并释明被害人家属明确表示案提起民事诉讼意愿本院予以尊重被告人系初犯于本案庭审前主动预交赔偿款人民币30000元有悔罪表现可酌定从轻处罚并适用缓刑综上中华人民共和国刑法最高人民法院关于处理自首和立功具体应用法律若干问题解释及最高人民法院关于审理交通肇事刑事案件具体应用法律若干问题解释[[5dc0c97d590d4210b8ee4b79f84bff82Article1Prgrph-1List|第㈠项]]之规定判决如下被告人宋慧勇犯交通肇事罪判处有期徒刑一年六个月缓刑二年")
 # print(num1, num2, num3)
 
-# 提取出判决结果，单位为月份
+# 提取出判决结果，单位为月份；解析失败时返回 None
 def sentence_result(text):
     text = text.strip(" ")  # 去除每行首尾可能出现的多余空格
     text = text.replace(" ", "")  # 去除所有空格
@@ -112,10 +112,12 @@ def sentence_result(text):
         result = text.split('判处如下')[-1]
     else:
         result = text
+    if "免予刑事处罚" in result:
+        return 0
     r1 = re.compile(u'(有期徒刑|拘役)[一二三四五六七八九十又年零两]{1,}(个月|年)')
     r2 = re.search(r1, result)
     if r2 is None:
-        num = 0
+        num = None
     else:
         text = r2.group()
         r3 = re.compile(u'[一二三四五六七八九十两]{1,}')

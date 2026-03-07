@@ -4,10 +4,9 @@
 
 with open("test.data", "r", encoding="utf-8") as f1:
     contents = f1.read().splitlines()
-    f2 = open("new_test.data", "a", encoding="utf-8")
-    for i in range(len(contents)):
-        if contents[i] == "   ":
-            f2.writelines(contents[i].replace("   ", "") + "\n")
-        else:
-            f2.writelines(contents[i] + "\n")
-    f2.close()
+    with open("new_test.data", "w", encoding="utf-8") as f2:
+        for line in contents:
+            if line == "   ":
+                f2.write("\n")
+            else:
+                f2.write(line + "\n")

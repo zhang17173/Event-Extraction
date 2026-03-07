@@ -50,4 +50,6 @@ def main():
                 f2.write(word + " ")
 
 
-main()
+
+if __name__ == "__main__":
+    main()

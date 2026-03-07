@@ -1,0 +1,12 @@
+numpy>=1.24
+scipy>=1.10
+gensim>=4.3
+torch>=2.0
+jieba>=0.42
+xlrd==1.2.0
+xlwt>=1.3
+pymysql>=1.1
+
+# 可选依赖：
+# pyltp
+# pynlpir

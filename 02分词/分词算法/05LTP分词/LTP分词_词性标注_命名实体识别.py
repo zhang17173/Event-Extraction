@@ -1,77 +1,132 @@
 # -*- coding: utf-8 -*-
-import os
-from pyltp import NamedEntityRecognizer
-from pyltp import Postagger
-from pyltp import Segmentor
 
-LTP_DATA_DIR = '/home/zhangshiwei/ltp_data_v3.4.0/'  # ltp模型目录的路径，根据实际情况修改
-cws_model_path = os.path.join(LTP_DATA_DIR,
-                              'cws.model')  # 分词模型路径，模型名称为`cws.model`
-pos_model_path = os.path.join(LTP_DATA_DIR,
-                              'pos.model')  # 词性标注模型路径，模型名称为`pos.model`
-ner_model_path = os.path.join(LTP_DATA_DIR,
-                              'ner.model')  # 命名实体识别模型路径，模型名称为`ner.model`
+from __future__ import annotations
 
-with open("../../../01数据预处理/preprocessed_data.txt", "r", encoding='utf-8') as f1:
-    content = f1.read()
+import argparse
+import sys
+from pathlib import Path
 
-    # 分词
-    segmentor = Segmentor()  # 初始化分词实例
-    segmentor.load_with_lexicon(cws_model_path, 'dict')  # 加载分词模型，以及自定义词典
-    seg_list = segmentor.segment(content)  # 分词
-    seg_list = list(seg_list)  # 返回值并不是list类型，因此需要转换为list
+ROOT = Path(__file__).resolve().parents[3]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
-    # LTP不能很好地处理回车，因此需要去除回车给分词带来的干扰。
-    # LTP也不能很好地处理数字，可能把一串数字分成好几个单词，因此需要连接可能拆开的数字
-    i = 0
-    while i < len(seg_list):
-        # 如果单词里包含回车，则需要分三种情况处理
-        if '\n' in seg_list[i] and len(seg_list[i]) > 1:
-            idx = seg_list[i].find('\n')
-            # 回车在单词的开头，如\n被告人
-            if idx == 0:
-                remains = seg_list[i][1:]
-                seg_list[i] = '\n'
-                seg_list.insert(i + 1, remains)
-            # 回车在单词末尾，如被告人\n
-            elif idx == len(seg_list[i]) - 1:
-                remains = seg_list[i][:-1]
-                seg_list[i] = remains
-                seg_list.insert(i + 1, '\n')
-            # 回车在单词中间，如被告人\n张某某
-            else:
-                remains1 = seg_list[i].split('\n')[0]
-                remains2 = seg_list[i].split('\n')[-1]
-                seg_list[i] = remains1
-                seg_list.insert(i + 1, '\n')
-                seg_list.insert(i + 2, remains2)
-        # 将拆开的数字连接起来
-        if seg_list[i].isdigit() and seg_list[i + 1].isdigit():
-            seg_list[i] = seg_list[i] + seg_list[i + 1]
-            del seg_list[i + 1]
+from project_utils import find_ltp_data_dir, print_step, print_success, repo_root
 
-        i += 1
+try:
+    from pyltp import NamedEntityRecognizer
+    from pyltp import Postagger
+    from pyltp import Segmentor
+except ImportError as exc:
+    raise SystemExit("未安装 pyltp。请先安装依赖，或直接使用仓库中已有的分词结果文件。") from exc
 
-    # 词性标注
-    postagger = Postagger()  # 初始化词性标注实例
-    postagger.load(pos_model_path)  # 加载模型
-    postags = postagger.postag(seg_list)  # 词性标注
 
-    # 命名实体识别
-    recognizer = NamedEntityRecognizer()  # 初始化命名实体识别实例
-    recognizer.load(ner_model_path)  # 加载模型
-    netags = recognizer.recognize(seg_list, postags)  # 命名实体识别
-
-    # 写入结果
-    f2 = open("分词_词性标注_命名实体识别_结果.txt", "w", encoding='utf-8')
-    for word, postag, netag in zip(seg_list, postags, netags):
-        if word == '\n':
-            f2.write('\n')
+def normalize_segmentation(seg_list: list[str]) -> list[str]:
+    normalized: list[str] = []
+    for token in seg_list:
+        if "\n" in token and token != "\n":
+            parts = token.split("\n")
+            for idx, part in enumerate(parts):
+                if part:
+                    normalized.append(part)
+                if idx != len(parts) - 1:
+                    normalized.append("\n")
         else:
-            f2.write(word + " " + postag + " " + netag + "\n")
-    f2.close()
+            normalized.append(token)
 
-    # 释放模型
-    segmentor.release()
-    postagger.release()
-    recognizer.release()
+    merged: list[str] = []
+    index = 0
+    while index < len(normalized):
+        token = normalized[index]
+        if token.isdigit():
+            current = token
+            while index + 1 < len(normalized) and normalized[index + 1].isdigit():
+                index += 1
+                current += normalized[index]
+            merged.append(current)
+        else:
+            merged.append(token)
+        index += 1
+    return merged
+
+
+def main() -> None:
+    repo = repo_root(__file__)
+    script_dir = Path(__file__).resolve().parent
+
+    parser = argparse.ArgumentParser(description="使用 LTP 完成分词、词性标注和命名实体识别。")
+    parser.add_argument(
+        "--input",
+        default=str(repo / "01数据预处理" / "preprocessed_data.txt"),
+        help="预处理后的文本文件。",
+    )
+    parser.add_argument(
+        "--output",
+        default=str(script_dir / "分词_词性标注_命名实体识别_结果.txt"),
+        help="输出文件。",
+    )
+    parser.add_argument(
+        "--dict",
+        default=str(script_dir / "dict"),
+        help="LTP 自定义词典路径。",
+    )
+    args = parser.parse_args()
+
+    input_path = Path(args.input).resolve()
+    output_path = Path(args.output).resolve()
+    lexicon_path = Path(args.dict).resolve()
+    ltp_data_dir = find_ltp_data_dir()
+    if not input_path.exists():
+        raise FileNotFoundError(f"预处理文本不存在: {input_path}")
+    if not lexicon_path.exists():
+        raise FileNotFoundError(f"LTP 自定义词典不存在: {lexicon_path}")
+
+    print_step(f"读取预处理数据: {input_path}")
+    content = input_path.read_text(encoding="utf-8")
+    if not content.strip():
+        raise RuntimeError("预处理文本为空，无法继续执行 LTP。")
+
+    cws_model_path = ltp_data_dir / "cws.model"
+    pos_model_path = ltp_data_dir / "pos.model"
+    ner_model_path = ltp_data_dir / "ner.model"
+
+    segmentor = Segmentor()
+    postagger = Postagger()
+    recognizer = NamedEntityRecognizer()
+
+    try:
+        segmentor.load_with_lexicon(str(cws_model_path), str(lexicon_path))
+        raw_seg_list = list(segmentor.segment(content))
+        seg_list = normalize_segmentation(raw_seg_list)
+
+        postagger.load(str(pos_model_path))
+        postags = list(postagger.postag(seg_list))
+
+        recognizer.load(str(ner_model_path))
+        netags = list(recognizer.recognize(seg_list, postags))
+    finally:
+        try:
+            segmentor.release()
+        except Exception:
+            pass
+        try:
+            postagger.release()
+        except Exception:
+            pass
+        try:
+            recognizer.release()
+        except Exception:
+            pass
+
+    with output_path.open("w", encoding="utf-8") as f:
+        for word, postag, netag in zip(seg_list, postags, netags):
+            if word == "\n":
+                f.write("\n")
+            else:
+                f.write(f"{word} {postag} {netag}\n")
+
+    print_success("LTP 处理完成。")
+    print_step(f"输出文件: {output_path.relative_to(repo) if output_path.is_relative_to(repo) else output_path}")
+
+
+if __name__ == "__main__":
+    main()

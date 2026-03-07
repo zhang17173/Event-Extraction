@@ -123,7 +123,7 @@ def viterbi(pi, A, B, O):
 
 def output_words(decode, O):
     T = len(O)
-    with open("result.txt", "a", encoding='utf-8') as f:
+    with open("result.txt", "w", encoding='utf-8') as f:
         for i in range(0, T):
             # 如果预测当前字符最有可能的状态是end或者single就分词
             if decode[i] == 2 or decode[i] == 3:
@@ -133,13 +133,15 @@ def output_words(decode, O):
                 f.write(O[i])
 
 
-# 开始训练
-f = open("./pku_training.utf8", "r", encoding="utf-8")
-data = f.read()[3:]
-f.close()
-pi, A, B = mle(data)  # 训练结束
-# 测试
-f2 = open("./test.txt", "r", encoding="utf-8")
-O = f2.read().strip()
-states = viterbi(pi, A, B, O)
-output_words(states, O)
+def main():
+    with open("./pku_training.utf8", "r", encoding="utf-8") as f:
+        data = f.read()[3:]
+    pi, A, B = mle(data)
+    with open("./test.txt", "r", encoding="utf-8") as f2:
+        O = f2.read().strip()
+    states = viterbi(pi, A, B, O)
+    output_words(states, O)
+
+
+if __name__ == "__main__":
+    main()

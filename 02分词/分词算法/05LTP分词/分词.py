@@ -1,26 +1,67 @@
 # -*- coding: utf-8 -*-
-from pyltp import Segmentor
-import os
-LTP_DATA_DIR = '/Users/zhangshiwei/ltp_data_v3.4.0/'  # ltp模型目录的路径
-cws_model_path = os.path.join(LTP_DATA_DIR,
-                              'cws.model')  # 分词模型路径，模型名称为`cws.model`
+
+from __future__ import annotations
+
+import argparse
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[3]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from project_utils import find_ltp_data_dir, print_step, print_success, repo_root
+
+try:
+    from pyltp import Segmentor
+except ImportError as exc:
+    raise SystemExit("未安装 pyltp。请先安装依赖，或直接使用仓库中已有的分词结果文件。") from exc
 
 
-segmentor = Segmentor()  # 初始化实例
-segmentor.load_with_lexicon(cws_model_path, 'dict')  # 加载自定义字典
-f1 = open("/Users/zhangshiwei/基于法律裁判文书的事件抽取和应用/01数据预处理/preprocessed_data.txt", "r", encoding="utf-8")
-if os.path.exists("segment_result.txt"):
-    os.remove("segment_result.txt")
-f2 = open("segment_result.txt", "a", encoding="utf-8")
+def main() -> None:
+    repo = repo_root(__file__)
+    script_dir = Path(__file__).resolve().parent
+
+    parser = argparse.ArgumentParser(description="使用 LTP 仅进行分词。")
+    parser.add_argument(
+        "--input",
+        default=str(repo / "01数据预处理" / "preprocessed_data.txt"),
+        help="预处理后的文本文件。",
+    )
+    parser.add_argument(
+        "--output",
+        default=str(script_dir / "仅分词结果.txt"),
+        help="输出文件。",
+    )
+    parser.add_argument(
+        "--dict",
+        default=str(script_dir / "dict"),
+        help="LTP 自定义词典路径。",
+    )
+    args = parser.parse_args()
+
+    input_path = Path(args.input).resolve()
+    output_path = Path(args.output).resolve()
+    lexicon_path = Path(args.dict).resolve()
+    ltp_data_dir = find_ltp_data_dir()
+    cws_model_path = ltp_data_dir / "cws.model"
+
+    segmentor = Segmentor()
+    try:
+        segmentor.load_with_lexicon(str(cws_model_path), str(lexicon_path))
+        with input_path.open("r", encoding="utf-8") as f_in, output_path.open("w", encoding="utf-8") as f_out:
+            for line in f_in:
+                words = list(segmentor.segment(line.strip()))
+                f_out.write(" ".join(words) + "\n")
+    finally:
+        try:
+            segmentor.release()
+        except Exception:
+            pass
+
+    print_success("分词完成。")
+    print_step(f"输出文件: {output_path.relative_to(repo) if output_path.is_relative_to(repo) else output_path}")
 
 
-texts = f1.readlines()
-for text in texts:
-    words = segmentor.segment(text.strip())  # 分词
-    words_list = list(words)
-    for word in words_list:
-        f2.write(word + ' ')
-    f2.write('\n')
-segmentor.release()  # 释放模型
-f1.close()
-f2.close()
+if __name__ == "__main__":
+    main()
